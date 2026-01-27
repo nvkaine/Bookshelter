@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+#subtitle-page {
+  margin-bottom: 4rem;
+}
+
+#welcome-txt {
+  margin-bottom: 1rem;
+}
+
+body {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#title-head {
+  font-size: 20px;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#container {
+  width: 90vw;
+  height: 90vh;
+
+  border-radius: 18px;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 20px;
+}
+
+#left-container {
+  margin: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#right-container {
+  flex: 1;
+
+  background-image: url("../../assets/bookshelter.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 16px;
+}
+
+#subtitle-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 60%;
+}
+
+#checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.input-text {
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: solid 1px #bbbbbb;
+  padding-left: 8px;
+}
+
+#input-password {
+  color: #7e7e7e;
+  text-decoration: none;
+}
+
+#remember-label {
+  color: #7e7e7e;
+}
+
+#signin-color {
+  color: rgb(134, 56, 207);
+  text-decoration: none;
+}
+
+#btn-signin {
+  margin-top: 4rem;
+  height: 42px;
+  width: 84px;
+  border-radius: 9px;
+  border: solid 1px #ccc;
+  background-color: #d8a581;
+  font-weight: 600;
+}
+
+#p-color {
+  color: #7e7e7e;
+}
+
+@media (max-width: 600px) {
+  #right-container {
+    flex: 60%;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 16px;
+    display: none;
+  }
+
+#container {
+  min-width: 91vw;
+  min-height: 98vh;
+
+  border-radius: 18px;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 20px;
+}
+
+main {
+  width: 100%;
+}
+
+}
