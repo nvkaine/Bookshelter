@@ -34,6 +34,11 @@ body {
   gap: 4px;
 }
 
+#ahome {
+  text-decoration: none;
+  color: black;
+}
+
 #container {
   width: 90vw;
   height: 90vh;
@@ -72,6 +77,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 2.5rem;
 }
 
 .input-container {
@@ -140,22 +146,21 @@ main {
     display: none;
   }
 
-#container {
-  min-width: 91vw;
-  min-height: 98vh;
+  #container {
+    min-width: 91vw;
+    min-height: 98vh;
 
-  border-radius: 18px;
+    border-radius: 18px;
 
-  background-color: white;
+    background-color: white;
 
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 
-  padding: 20px;
-}
+    padding: 20px;
+  }
 
-main {
-  width: 100%;
-}
-
+  main {
+    width: 100%;
+  }
 }

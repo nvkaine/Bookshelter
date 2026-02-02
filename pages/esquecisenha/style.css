@@ -3,29 +3,32 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-#subtitle-page {
-  margin-bottom: 3rem;
-}
-
-#welcome-txt {
-  margin-bottom: 1rem;
 }
 
 body {
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  padding: 48px;
 }
 
-#title-head {
-  font-size: 20px;
+#container {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 18px;
+  background-color: white;
+  display: flex;
+  padding: 20px;
+}
+
+#left-container {
+  margin: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 #header-container {
@@ -34,91 +37,60 @@ body {
   gap: 4px;
 }
 
-#container {
-  width: 55vw;
-  height: 40vh;
-
-  border-radius: 18px;
-
-  background-color: white;
-
-  display: flex;
-  flex-direction: row;
-
-  padding: 20px;
-  margin-top: 13rem;
+#title-head {
+  font-size: 20px;
 }
 
-#left-container {
-  margin: 20px;
-  flex: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-
-#right-container {
-  flex: 60%;
-  margin: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  border-radius: 16px;
-}
-
-#next {
-  flex: 30%;
-  width: 100%;
-  display: flex;
-    justify-content: flex-end;
-padding-right: 2rem;
-}
-
-#subtitle-login {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  flex: 70%;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin-top: 2rem;
-    padding: 2rem;
+#ahome {
+  text-decoration: none;
+  color: black;
 }
 
 main {
   width: 60%;
 }
 
-#checkbox-container {
+#welcome-txt {
+  margin-bottom: 1rem;
+}
+
+#subtitle-page {
+  margin-bottom: 2rem;
+}
+
+.input-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  white-space: nowrap;
+  flex-direction: column;
 }
 
 .input-text {
-  margin-bottom: 1rem;
-  height: 3rem;
+  margin-top: 0.3rem;
+  height: 2rem;
   border-radius: 8px;
   border: solid 1px #bbbbbb;
   padding-left: 8px;
 }
 
-#input-password {
-  color: #7e7e7e;
-  text-decoration: none;
+#btn-signin {
+  margin-top: 2rem;
+  height: 42px;
+  width: 120px; 
+  border-radius: 9px;
+  border: solid 1px #ccc;
+  background-color: #d8a581;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-#remember-label {
+#right-container {
+  flex: 1;
+  background-image: url("../../assets/bookshelter.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+#p-color {
   color: #7e7e7e;
 }
 
@@ -127,103 +99,12 @@ main {
   text-decoration: none;
 }
 
-#btn-signin {
-  margin-top: 4rem;
-  height: 42px;
-  width: 84px;
-  border-radius: 9px;
-  border: solid 1px #ccc;
-  background-color: #d8a581;
-  font-weight: 600;
-  
-}
-
-#p-color {
-  color: #7e7e7e;
-}
-
-form {
-  width: 100%;
-  height: 100%;
-}
-
-#label {
-  margin-top: 4rem;
-}
-
-/* 2. AZUL: Telas médias (Tablets - a partir de 600px) */
+/* Responsividade simples para celular */
 @media (max-width: 600px) {
-
-  #container {
-  min-width: 85vw;
-  min-height: 67vh;
-
-  border-radius: 18px;
-
-  background-color: white;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  padding: 13px;
-  margin-top: 5rem;
-}
-
-#label {
-  margin-top: 0rem;
-}
-
-#next {
-  flex: 50%;
-  width: 100%;
-  display: flex;
-padding-right: 0rem;
- justify-content: flex-start;
- 
-} 
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  flex: 60%;
-    justify-content: space-evenly;
-margin-top: 0;
- padding: 0rem;
-}
-
-#left-container {
-  margin: 0px;
-  flex: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-
-#btn-signin { 
-  margin-top: 0rem;
-  height: 42px;
-  width: 84px;
-  border-radius: 9px;
-  border: solid 1px #ccc;
-  background-color: #d8a581;
-  font-weight: 600;
- 
-  
-}
-
-main {
-width: 100%;
-}
-
-#subtitle-page {
-  margin-bottom: 0rem;
-}
-
-img {
-  height: 30px;
-  width: 30px;
-}
-
+  #right-container {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
 }
