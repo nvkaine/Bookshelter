@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 0.3rem;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+}
+
+#mainheader {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #000;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+#logoagrupa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+#menu-icon span {
+  width: 25px;
+  height: 2.5px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #2c2c2c;
+  font-size: 28px;
+}
+
+h2 {
+          font-size: 24px;
+    font-weight: 600;
+}
+
+
+h4 {
+font-size: 15px;
+    font-weight: 400;
+}
+
+#desktopmenu {
+  display: none;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px 0px;
+  max-width: 1200px;
+  margin: 1px;
+}
+
+#card {
+  width: 100%;
+  max-width: 340px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px black;
+}
+
+#book-cover {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#inferior {
+  padding: 9px;
+  padding-top: 0px;
+}
+
+#estrelas {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+#preço {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #ff6b6b;
+}
+
+#oferta {
+  flex: 1;
+  background: #ff9e9e;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 158, 158, 1) 0%,
+    rgba(255, 176, 176, 1) 58%,
+    rgba(255, 204, 204, 1) 100%
+  );
+}
+
+#valores {
+  flex: 1;
+  display: flex;
+  padding: 3px;
+  margin-top: 0.1rem;
+}
+
+#valoratual {
+  flex: 1;
+  font-size: 23px;
+  margin-right: 0.3rem;
+}
+
+#divnov {
+  flex: 2;
+}
+
+#promoção {
+  background: #ffbcbc;
+  display: flex;
+  justify-content: center;
+}
+
+#valorant {
+  margin-top: 0.1rem; 
+  
+}
+
+#opções {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+#comprar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #da2727;
+  color: #fdfdfd;
+  width: 80%;
+  font-size: 1rem;
+}
+
+#carrinho {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+  border: black 1px solid;
+  width: 80%;
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e7e7e7;
+}
+
+tr, td, th{
+  border: 1px solid #e7e7e7;
+  padding: 4px;
+
+}
+
+.cinz {
+  background-color: #e4e3e3;
+  font-weight: 600;
+}
+
+
+
+
+
+
